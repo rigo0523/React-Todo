@@ -6,11 +6,11 @@ import Todo from "./Todo";
 const TodoList = (props) => {
   return (
     <div className="list">
-      {props.chores.map((item) => {
-        return <Todo key={item.id} data={item} toggleItem={props.toggleItem} />;
-      })}
+      {props.chores.map((item) => (
+        <Todo toggleItem={props.toggleItem} key={item.id} data={item} />
+      ))}
       <button className="clear-button" onClick={props.clearTask}>
-        Clear Task
+        Clear Tasks
       </button>
     </div>
   );
