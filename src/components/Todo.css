@@ -1,0 +1,15 @@
+.tasks {
+  background: gray;
+  padding: 1px;
+}
+
+.completed {
+  background: red;
+  text-decoration: line-through;
+}
+
+.clear-button {
+  background: skyblue;
+  color: white;
+  padding: 10px 20px;
+}
